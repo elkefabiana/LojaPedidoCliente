@@ -1,0 +1,528 @@
+@charset "UTF8";
+
+
+:root{
+    --cor0:#8fa295ea!important; 
+    --cor1:#78857B!important;
+    --cor2:#92A69A!important;
+    --cor3:#a1c1c2!important;
+    --cor4:#95AB9F!important;
+    --cor5:#b6c4b45f!important;
+    --cor6:#94a49ac6!important;
+    --cor7:#BFB526!important;
+    --cor8:#8C1F1F!important;
+    --cor9:#32211d!important;
+    --cor10:#5E3C33!important;
+    --cor11:#BF0413!important;
+}
+/*gerais*/
+.body{
+    background-color:#78857B;
+    font-family: 'Roboto', sans-serif;
+}
+.row {
+    margin: 0px;
+}
+.container{
+    padding: 70px 0;  
+}
+p,li {
+    color:#94a49ac6 ;
+    font-size: 14px;
+}
+/*Barra de navegação*/
+header, .navbar{
+    background-color:rgba(0, 0, 0, 0.751);
+    box-shadow: black solid 2px 2px 10px;
+}
+#nav-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#logo{
+    width: 75px;
+}
+.navbar-brand{
+    padding: 0px;
+    color: white;
+}
+.navbar-brand:hover{
+    color: #b6c4b45f;
+}
+#navbar-links a{
+    color:white
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding:1rem .8rem ;
+    color: white;
+}
+/*slider*/
+
+.container-fluid{
+    padding: 0px;
+}
+#carouselIndicators .carousel-inner, .carousel-item{
+    height: 90vh;
+}
+#carouselIndicators .carousel-caption{
+top: 13%;
+}
+
+#carouselIndicators .carousel-caption h2{
+    font-size: 45px;
+    margin-top: 190px;
+    color:black;
+    text-shadow: #ffffff 0px 0px 2px;
+}
+#carouselIndicators .carousel-caption p{
+    font-size: 30px;
+    font-weight: 350px;
+    margin-bottom: 30px;
+    color:white;
+    text-shadow: #ffffff 0px 0px 1px;
+    }
+.main-btn{
+    background-color:rgba(255, 255, 255, 0.623);
+    color:black;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 220px;
+    height: 80px;
+    border-radius: 15px;
+    border: 3px solid black;
+    transition: .5s; 
+}
+.main-btn:hover{    
+    text-decoration: none;
+    color: #BF0413;
+    background-color: transparent;
+    border-color: #bf0414ac;
+}
+.carousel-indicators .active{
+    background-color: rgba(0, 0, 0, 0.64);
+    margin-bottom: 70px;
+}
+.carousel-indicators li{
+    background-color:#BF0413;
+    margin-bottom: 90px;
+}
+/*NOSSA HISTÓRIA*/
+.historia{
+    background-color: var(--cor1);
+    padding: 70px 0;
+    color: white;
+}
+#about-area{
+    background-color:#8fa2953b;
+}
+.main-title{
+    color: black;
+    margin:0 0 155px 0;
+    font-size: 40px;
+    text-align: center;
+    box-shadow: #92A69A 1px 1px 5px;
+}
+.main-title::after{
+    content:'';
+    border-top:2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+.about-title{
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+.row p{
+    margin: 0 0 50px 20px;
+    color:black ;
+}
+.about-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+.about-list li{
+    line-height: 30px;
+    
+}
+#about-area #about-list i {
+    color:black ;
+    margin-right: 15px;
+}
+/*SERVIÇOS*/
+.service-box{
+    text-align: center;
+    margin-bottom:50px ;
+}
+.service-box i, .service-box h5{
+    font-size: 20px;
+    color: #32211d;
+}
+.service-box i{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:black;
+}
+.service-box h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.service-box:hover > i, .service-box:hover > h5{
+    font-size: 34px;
+    color:#BF0413;
+}
+/*VENDAS*/
+
+.circle-box div{
+    padding:0 60px; 
+    display: flex;   
+}
+.progressbar-text{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+#data-area p{
+    color:white;
+    text-align: center;
+    font-size: 56px;
+    margin-top: 20px;
+}
+.container-parallax{
+    background-image: url(../img/cost1.jpg);
+    background-size: cover;
+    box-shadow: inset 1px 1px 2px #cedfd46f;
+    background-attachment: fixed;
+}
+/*Contato de Email*/
+
+#newsletter-area{
+    text-align: center;
+    background-color:#bfb52635;
+    margin-top: 100px; 
+    padding: 40px 0;  
+}
+#newsletter-area h3{
+    margin-top: 20px;
+}
+#newsletter-area p{
+    font-size: 24px;
+    margin-top: -30px; 
+    margin-bottom: 40px;
+    color:white;
+    text-align: center;
+}
+#email-input{
+    border:#BF0413 solid 1px;
+    border-radius: 0px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    display: inline;
+    box-sizing: border-box;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+}
+#news-btn{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border:#BF0413 solid 1px;
+    background-color:#BF0413;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0px 30px;
+    margin-left: 0px;
+    position: absolute;
+    transition: 0.6s;
+}
+#news-btn:hover{
+    background-color: transparent;
+    color:white;
+}
+/*Duvidas*/
+#contact-area .container{
+    padding: 20px 100px;
+}  
+#call-area{
+    text-align: center;
+    background-color:#a1c1c264;
+}
+#call-area .row{
+    display: block;
+    text-align: center;
+}
+#call-area .row p{
+    font-size: 24px;
+    color:#BF0413;
+    font-weight: bold;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+#call-area #call-btn{
+    background-color:#a1c1c264;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 1px;
+    width: 130px;
+    Height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#call-area #call-btn:hover{
+    background-color: transparent;
+    color: #BF0413!important;
+    border:#BF0413 solid 1px;; 
+}
+/*Footer*/
+
+#contact-area{
+    text-align: center;
+    margin-bottom: 5%; 
+}
+.contact-box{
+    padding: 50px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #BF0413;
+}
+.contact-box i{
+    color:#BF0413;
+    border: solid 2px #BF0413;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact-box p{
+    font-size: 18px;
+    color: #BF0413;
+}
+.contact-box .contact-title{
+    font-size: 18px;
+    color: #BF0413;
+    font-weight: bold;
+}
+#msg-box p{
+    font-size: 28px;
+}
+#msg-box a{
+    text-decoration: none;text-align: center;
+}   
+#contact-form input[type=text], #contact-form input[type=email], #contact-form textarea{
+    margin-bottom: 5px;
+    border-radius: 0px;
+    border: solid 1.5px #BF0413;
+}
+#contact-form .main-btn{
+    font-size: 15px;
+    background-color: white;
+    font-weight:bold;
+    margin:25px 10px 0px 40px;
+    height: 45px;
+    padding: 1px 0 0 0;
+}
+#contact-form .main-btn:hover{
+    background-color:transparent;
+}
+/* copy */
+
+#copy-area{
+    background-color:rgba(0, 0, 0, 0.796);
+}
+#copy-area .container{
+    padding: 10px 0px;
+    text-align: center;
+}
+#copy-area .container p{
+    margin-bottom: 0;
+    font-size: 16px;
+    color:#BF0413;
+}
+#copy-area .container a{
+    font-weight: bold;
+    color: white;
+}
+#copy-area .container a:hover{
+    text-decoration: none;
+    color:#BF0413;
+}
+/*responsive*/
+@media(max-width: 768px){
+    /*geral*/
+    .container{
+        padding: 20px  0;
+    }
+    /*slaider*/
+    .container-fluid{
+        padding: 0px;
+    }
+    #carouselIndicators .carousel-inner, .carousel-item{
+        height: 100vh;
+    }
+    #carouselIndicators .carousel-caption{
+    top: 35%;
+    }
+    #main-slider .carousel-caption h2{
+        font-size: 28px;
+    }
+    #main-slider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;  
+    }
+    .carousel-caption{
+        left: 10%;
+        right: 10%;
+    }
+    /*about*/
+    #about-area img{
+        margin-top: 100px;
+    }
+}
+/*DATA-AREA*/
+#data-area p{
+    font-size: 22px;
+}
+/* news*/
+#news-area p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#email-input{
+    width: 70%;
+}
+#call-area {
+    margin-top: 30px;
+}
+#call-area .container{
+    padding: 30px;
+}
+#call-area btn{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#call-area p, #call-area #call-btn{
+    font-size: 16px;
+}
+
+/*slaider*/
+@media(max-width: 570px){  
+    #carouselIndicators .carousel-caption{
+        left: 0;
+        right: 0;  
+    }
+    #carouselIndicators .carousel-caption .container-fluid{
+        height: 40%;
+    }
+    #carouselIndicators .carousel-caption h2{
+        font-size: 0px;
+        margin-top: 180px;
+        margin-bottom: 60px;
+    }
+    #carouselIndicators .carousel-caption p{
+        display: none;
+    }
+    
+}
+@media(max-width: 667px){  
+    #carouselIndicators .carousel-caption{
+        left: 0;
+        right: 0;
+    }
+    #carouselIndicators .carousel-caption .container-fluid{
+        height: 40%;
+    }
+    #carouselIndicators .carousel-caption h2{
+        font-size: 20px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+    #carouselIndicators .carousel-caption p{
+        display: none;
+    }
+    #carouselIndicators .carousel-caption .main-btn{
+        margin-bottom: auto;
+        font-size: 12px;
+    }
+    /*about*/
+    .main-title{
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom:20px;
+    }
+    #about-area img{
+        display: block; 
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 80px;        
+    }
+    #about-area .container{
+        padding: 0;
+    }
+    #about-area .about-title{
+        text-align: center;
+    }
+    /*news*/
+    #newsletter-area{
+        margin-top: 20px;
+        
+    }
+    #newsletter-area .container{
+        padding: 50px;
+
+    }
+    #newsletter-area h3{
+        font-size: 30px;
+        margin-top: auto;
+        margin-bottom: 60px;
+
+    }
+    #newsletter-area p{
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;       
+    }
+    #newsletter-area #email{
+        width: 80%;
+        margin-top: 60px;
+    }
+    /*call to action*/
+    #call-area{
+        margin-top: 20px;
+    }
+    #call-area .container{
+        padding: 10px;
+    }
+    #call-area p, #call-area #call-btn{
+        font-size: 20px;
+    }
+    #data-area p{
+        font-size: 18px;
+    }
+    #data-area .row{
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #copy-area{
+        height: 30px; 
+    }
+    #copy-area p{
+        font-size: 5px;
+    }
+}
